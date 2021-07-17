@@ -1,7 +1,8 @@
 import './App.css';
-import Buttons from './components/Buttons';
-import Card from './components/Card';
-import InputForm from './components/InputForm';
+import Buttons from './components/Buttons/Buttons';
+import Card from './components/UI/Card';
+import InputForm from './components/Forms/InputForm';
+import Calculation from './components/Calculation';
 
 function App() {
   return (
@@ -9,9 +10,10 @@ function App() {
       <InputForm className='top-form'/>
       <Buttons /> 
       <InputForm className='bottom-form'/>
+      <Calculation/>
     </Card>
 
   );
 }
 
-export default App
+export default App;

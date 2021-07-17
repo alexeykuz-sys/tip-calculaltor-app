@@ -1,0 +1,16 @@
+.btn-wrapper     {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 16rem;
+    margin: 2.5rem;
+}
+
+.btn-header{
+    text-transform: capitalize;
+    font-weight: 700;
+    color: hsl(184, 14%, 56%);
+}
+

@@ -9,8 +9,6 @@ const Buttons = () => {
         <div className='btn-wrapper'>
             <div className='btn-header'>Select Tip %</div>
                 <Button/>
-            
-        
         </div>
     )
     

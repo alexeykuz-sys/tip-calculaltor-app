@@ -1,11 +1,11 @@
 .card1 {
   background-color: white;
   width: 500px;
-  height: 500px;
+  height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .top-form{
