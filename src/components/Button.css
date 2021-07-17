@@ -1,4 +1,9 @@
-.button {
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
     width: fit-content;
     height: fit-content;
     padding: 1rem;

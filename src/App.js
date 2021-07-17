@@ -1,13 +1,11 @@
 import './App.css';
 import Card from './components/Card';
-import Button from './components/Button';
+import Buttons from './components/Buttons';
 
 function App() {
   return (
-    <div className="App">
-      <Card>
-        <Button />
-      </Card>
+    <div className="card1">
+      <Buttons /> 
     </div>
   );
 }
