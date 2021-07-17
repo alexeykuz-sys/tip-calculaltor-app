@@ -1,7 +1,42 @@
-.button{
-    width: fit-content;
-    height: fit-content;
-    padding: 1rem;
-    background-color: red;
-    cursor: pointer;
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.button {
+  width: 4rem;
+  height: 0.7rem;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1,
+.btn2,
+.btn4,
+.btn5 {
+  margin: .5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.btn3 {
+  color: hsl(183, 100%, 15%) ;
+  background-color: hsl(185, 41%, 84%);
+  margin: .5em;
+  font-weight: 700;
+}
+
+.btn6 {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+  margin: .5rem;
+  font-weight: 700;
 }

@@ -2,4 +2,46 @@
   background-color: white;
   width: 500px;
   height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-form{
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.top-form::before{
+  content: 'Bill';
+  text-transform: capitalize;
+  font-weight: 700;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 1rem;
+
+}
+
+.top-form input{
+  background: hsl(189, 41%, 97%) url(./images/icon-dollar.svg) left no-repeat;
+
+}
+
+.bottom-form {
+  margin-bottom: 20px;
+}
+
+
+.bottom-form::before{
+  content: 'Number of People';
+
+  text-transform: capitalize;
+  font-weight: 700;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 1rem;
+}
+
+.bottom-form input{
+  background: hsl(189, 41%, 97%) url(./images/icon-person.svg) left no-repeat;
+
 }

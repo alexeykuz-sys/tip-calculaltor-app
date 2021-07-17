@@ -3,13 +3,15 @@ import './Buttons.css';
 // import Card from './Card'
 import Button from './Button';
 
-const Buttons = (props) => {
+const Buttons = () => {
     
     return (
-        <ul className='btn-list'>
-            <Button/>
+        <div className='btn-wrapper'>
+            <div className='btn-header'>Select Tip %</div>
+                <Button/>
+            
         
-        </ul>
+        </div>
     )
     
 }
