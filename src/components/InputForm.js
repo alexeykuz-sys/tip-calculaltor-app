@@ -1,7 +1,7 @@
 const InputForm = () => {
     return (
         <card>
-            <label htmlFor="tip">Tip</label>
+            <label htmlFor="tip">Bill</label>
             <input type="text"/> 
         </card> 
         
