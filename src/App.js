@@ -1,11 +1,13 @@
-import InputForm from './components/InputForm'
+import './App.css';
+import Card from './components/Card';
+import Buttons from './components/Buttons';
 
 function App() {
-	return (
-		<card className="App">
-			<InputForm />
-		</card>
-	)
+  return (
+    <div className="card1">
+      <Buttons /> 
+    </div>
+  );
 }
 
 export default App
