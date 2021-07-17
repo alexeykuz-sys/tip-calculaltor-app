@@ -2,21 +2,16 @@ import React from 'react';
 import './Button.css';
 import Card from './Card'
 
-const Button = () => {
+const Button = (props) => {
     return (
-        <Card>
-            <div className='btn-list'>
-                <ul>
-                    <li className='button'>5%</li>
-                    <li className='button'>10%</li>
-                    <li className='button'>15%</li>
-                    <li className='button'>25%</li>
-                    <li className='button'>25%</li>
-
-                </ul>
-            </div>
-
-        </Card>
+        <li>
+            <Card className='button' id='btn1'>5%</Card>
+            <Card className='button' id='btn2'>10%</Card>
+            <Card className='button' id='btn3'>15%</Card>
+            <Card className='button' id='btn4'>25%</Card>
+            <Card className='button' id='btn5'>50%</Card>
+            <Card className='button' id='btn5'>Custom</Card>
+        </li>
     )
 }
 

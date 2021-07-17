@@ -1,14 +1,15 @@
 import React from 'react';
 import './Buttons.css';
-import Card from './Card'
+// import Card from './Card'
 import Button from './Button';
 
-const Buttons = () => {
+const Buttons = (props) => {
     
     return (
-        <Card>
+        <ul className='btn-list'>
             <Button/>
-        </Card>
+        
+        </ul>
     )
     
 }
