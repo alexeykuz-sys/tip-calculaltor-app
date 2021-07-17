@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Space Mono", Helvetica, sans-serif;
+  min-height: 100vh;
+  font-size: 16px;
+  background: hsl(185, 41%, 84%);
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+>>>>>>> 3e993bd5b14f2ab046e09f6b44e8dfa2228eac14
