@@ -1,10 +1,17 @@
 import React from 'react';
 import './Button.css';
+import Card from './Card'
 
 const Button = (props) => {
-    const eventHandler = () => {
-        console.log("clicked")
+    const eventHandler = (props) => {
+        const {}
     }
-    return 
+    return (
+        <Card>
+            <button onClick={eventHandler} className="button">55%</button>
+        </Card>
+    )
+    
 }
 
+export default Button;
