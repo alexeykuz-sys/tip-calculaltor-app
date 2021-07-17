@@ -4,11 +4,13 @@ import './Buttons.css';
 import Button from './Button';
 
 const Buttons = () => {
+
+    
     
     return (
         <div className='btn-wrapper'>
             <div className='btn-header'>Select Tip %</div>
-                <Button/>
+                <Button />
         </div>
     )
     
