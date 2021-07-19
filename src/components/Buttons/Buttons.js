@@ -3,14 +3,19 @@ import './Buttons.css';
 // import Card from './Card'
 import Button from './Button';
 
-const Buttons = () => {
+const Buttons = (props) => {
+    
+    const dataTipHandler=(tip)=>{
+    
 
-    
-    
+    props.onChangeData(tip)
+        
+    }
+
     return (
-        <div className='btn-wrapper'>
+        <div className='btn-wrapper' >
             <div className='btn-header'>Select Tip %</div>
-                <Button />
+                <Button onTipChange={dataTipHandler}/>
         </div>
     )
     
