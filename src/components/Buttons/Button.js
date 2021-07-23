@@ -3,9 +3,9 @@ import './Button.css';
 import Card from '../UI/Card'
 
 
-const Button = (props,key) => {
-    console.log(key)
-    const btnClass= `button + btn+props.id`;
+const Button = (props) => {
+    
+    const btnClass= `button ${props.class}`;
     return (
         
         <div>
