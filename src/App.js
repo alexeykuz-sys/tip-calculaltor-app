@@ -5,13 +5,14 @@ import BillInputForm from './components/Forms/BillInputForm';
 import PeopleInputForm from './components/Forms/PeopleInputForm';
 import Calculation from './components/Calculation';
 
-function App() {
+function App(props) {
 
   const changeDataHandler = (enteredData) =>{
     const inputData = {
       ...enteredData,
     }
     console.log(inputData)
+    
   }
 
   return (
@@ -19,7 +20,7 @@ function App() {
       <BillInputForm className='top-form' onChangeData={changeDataHandler}/>
       <Buttons onChangeData={changeDataHandler}/> 
       <PeopleInputForm className='bottom-form' onChangeData={changeDataHandler}/>
-      <Calculation />
+      <Calculation onChangeData={changeDataHandler}/>
     </Card>
 
   );
