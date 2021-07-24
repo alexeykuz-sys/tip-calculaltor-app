@@ -5,7 +5,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 16rem;
-    margin: 2.5rem;
+    margin: 2.5rem 0rem;
 }
 
 .btn-header{

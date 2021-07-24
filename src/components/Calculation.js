@@ -8,7 +8,7 @@ const Calculation = (props) => {
     const [tip, setTip]=useState('tip')
 
     const changeDataHandler = (data)=>{
-       setTip(props.data)
+        setTip(props.data)
 
     }
 

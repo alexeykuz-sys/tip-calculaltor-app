@@ -3,7 +3,7 @@ import './Buttons.css';
 // import Card from './Card'
 import Button from './Button';
 
-const Buttons = () => {
+const Buttons = (props) => {
 
     const buttons = [
         {   id:1,
@@ -32,25 +32,19 @@ const Buttons = () => {
         },
     ]
 
-    
-    // const dataTipHandler=(tip)=>{
-    
-    //     const tipAdded = {
-    //         tipAdded:tip,
-    //     }
-
-    // props.onChangeData(tipAdded)
-        
-    // }
+    const tipHandler=(event)=>{
+        const tipData = {
+            tip: event.target.innerHTML,
+        }
+        props.onChangeData(tipData);
+    };
 
     return (
         <div className='btn-wrapper' >
             <div className='btn-header'>Select Tip %</div>
-            <ul className='btn-list'>
+            <ul className='btn-list' onClick={tipHandler}>
                 {buttons.map((button)=>{
-                    
-                    return <Button class={button.class} key={button.id} button={button.btn}/>
-                    
+                    return <Button  class={button.class} key={button.id} button={button.btn}/>
                 })}
             </ul>
         </div>

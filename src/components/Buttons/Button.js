@@ -7,10 +7,7 @@ const Button = (props) => {
     
     const btnClass= `button ${props.class}`;
     return (
-        
-        <div>
             <Card className={btnClass}>{props.button}</Card>
-        </div>
     )
 }
 
