@@ -6,11 +6,13 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  flex: 1;
 }
 
 .top-form{
   margin-top: 20px;
   padding: 5px;
+  flex: 1;
 }
 
 .top-form::before{
@@ -29,6 +31,7 @@
 
 .bottom-form {
   margin-bottom: 20px;
+  flex: 1;
 }
 
 
@@ -43,5 +46,34 @@
 
 .bottom-form input{
   background: hsl(189, 41%, 97%) url(./images/icon-person.svg) left no-repeat;
+
+}
+
+@media (min-width: 650px) {
+
+  .card1 {
+    flex-direction: row;
+    width:600px;
+    /* height: 500px; */
+    padding: 5px;
+    justify-content: space-evenly;
+  }
+  
+  .input-wrapper {
+    width: 50%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .result-wrapper{
+    /* width: 50%; */
+    padding: 10px;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 
 }

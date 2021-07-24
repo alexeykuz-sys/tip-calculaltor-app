@@ -4,7 +4,7 @@ import'./PeopleInputForm.css';
 const PeopleInputForm = (props) => {
     const formClass = 'form-wrapper ' + props.className;
     
-    const[enteredPeople, setenteredPeople]=useState('');
+    const[enteredPeople, setenteredPeople]=useState('0');
 
     const numberPeopleHandler = (event) =>{
         setenteredPeople(event.target.value)
