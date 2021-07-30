@@ -22,3 +22,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+
+.text-header {
+  align-items: center;
+    display: flex;
+    justify-content: center;
+}

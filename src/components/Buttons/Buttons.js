@@ -44,7 +44,7 @@ const Buttons = (props) => {
             <div className='btn-header'>Select Tip %</div>
             <ul className='btn-list' onClick={tipHandler}>
                 {buttons.map((button)=>{
-                    return <Button   class={button.class} key={button.id} button={button.btn}/>
+                    return <Button  value={0} class={button.class} key={button.id} button={button.btn}/>
                 })}
             </ul>
         </div>
