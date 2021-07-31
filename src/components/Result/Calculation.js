@@ -2,27 +2,23 @@ import React from 'react';
 import '../Result/Calculation.css';
 import Card from '../UI/Card';
 
-const Calculation = (props) => {
 
-    // const [tipPP, setTipPP]=useState('');
-    // const [totalPP, setTotalPP] = useState('0');
-        
-    //     const calcHandler =(e)=>{
-    //         setTipPP(((props.bill * props.tip) / props.people)/100);
-    //         setTotalPP(props.bill/props.people + tipPP)
-    //         console.log('ert')
-    //     }
-
-    //     useEffect(() => {
-            
-    //     }, [tipPP, totalPP]);
-        
-
+const Calculation = ({bill, tip, people, reset}) => {
     return (
         <Card className='calcCard'>
-            <div className='calcTip' >Tip amount<span className='tipTotal' >${((props.bill * props.tip) / props.people)/100}</span></div>
-            <div className='calcTotal'>Total<span>${props.bill/props.people + ((props.bill * props.tip) / props.people)/100}</span></div>
-            <Card className='resetBtn'>Reset</Card>
+            <div className='calcTip'>
+                Tip amount
+                <span className='tipTotal' >
+                    ${((bill * tip) / people)/100}
+                </span>
+            </div>
+            <div className='calcTotal'>
+                Total
+                <span>
+                    ${bill/people + ((bill * tip) / people)/100}
+                </span>
+            </div>
+            <button className='resetBtn' type='button' onClick={reset}>Reset</button>
         </Card>
     )
 };

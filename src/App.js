@@ -2,22 +2,26 @@ import React,{useState} from 'react';
 import './App.css';
 import Buttons from './components/Buttons/Buttons';
 import Card from './components/UI/Card';
-import BillInputForm from './components/Forms/BillInputForm';
-import PeopleInputForm from './components/Forms/PeopleInputForm';
+import InputForm from './components/Forms/InputForm';
 import Calculation from './components/Result/Calculation';
 
 function App() {
-  const [amount, setAmount] = useState('');
+  const [amount, setAmount] = useState('0');
   const [tip, setTip] = useState('0');
-  const [people, setPeople] = useState('0');
+  const [people, setPeople] = useState('1');
   
-  console.log(amount)
+  const reset=()=>{
+    setAmount('0');
+    setPeople('1');
+    setTip('0')
+  }
+  
   const changeBillHandler = (billData) =>{
-      setAmount(parseFloat(billData.bill));
+      setAmount(billData);
   }
 
   const changePeopleHandler = (peopleData) =>{
-    setPeople(parseFloat(peopleData.people));
+    setPeople(peopleData);
 }
 
 const changeTipHandler = (tipData) =>{
@@ -27,12 +31,12 @@ const changeTipHandler = (tipData) =>{
   return (
     <Card className="card1">
       <div className='input-wrapper'>
-        <BillInputForm className='top-form' onChangeBill={changeBillHandler} />
+        <InputForm myClassName='top-form' onChangeValue={changeBillHandler} initialValue={amount}/>
         <Buttons onChangeData={changeTipHandler}/> 
-        <PeopleInputForm className='bottom-form' onChangePeople = {changePeopleHandler}/>
+        <InputForm myClassName='bottom-form' onChangeValue={changePeopleHandler} initialValue={people}/>
       </div>
       <div className='result-wrapper'>
-        <Calculation bill={amount} tip={tip} people={people}/>
+        <Calculation bill={parseFloat(amount)} tip={parseInt(tip)} people={parseInt(people)} reset={reset}/>
       </div>
 
     </Card>
