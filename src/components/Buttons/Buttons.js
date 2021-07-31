@@ -3,6 +3,7 @@ import './Buttons.css';
 // import Card from './Card'
 import Button from './Button';
 
+
 const Buttons = (props) => {
 
     const buttons = [
@@ -33,10 +34,15 @@ const Buttons = (props) => {
     ]
 
     const tipHandler=(event)=>{
+        console.log(event)
+        if(event.target.className.split(' ')[2] === 'btn6'){
+            return;
+        }  
         const tipData = {
             tip: event.target.innerHTML,
         }
         props.onChangeData(tipData);
+    
     };
 
     return (
