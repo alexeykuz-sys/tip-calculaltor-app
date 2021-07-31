@@ -9,13 +9,13 @@ const Calculation = ({bill, tip, people, reset}) => {
             <div className='calcTip'>
                 Tip amount
                 <span className='tipTotal' >
-                    ${((bill * tip) / people)/100}
+                    ${(((bill * tip) / people)/100).toFixed(2)}
                 </span>
             </div>
             <div className='calcTotal'>
                 Total
                 <span>
-                    ${bill/people + ((bill * tip) / people)/100}
+                    ${(bill/people + ((bill * tip) / people)/100).toFixed(2)}
                 </span>
             </div>
             <button className='resetBtn' type='button' onClick={reset}>Reset</button>
