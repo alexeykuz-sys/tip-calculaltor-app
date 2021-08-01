@@ -30,4 +30,6 @@ body {
     justify-content: center;
 }
 
-input, select { font-size: 100%; };
+input { 
+  font-size: 100%; 
+}
