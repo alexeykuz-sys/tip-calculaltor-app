@@ -5,7 +5,7 @@ import Card from '../UI/Card'
 
 const Button = (props) => {
     
-    const btnClass= `button ${props.class}`;
+    const btnClass= `button ${props.class} sd`;
     return (
             <Card className={btnClass}>{props.button}</Card>
     )
