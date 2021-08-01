@@ -26,10 +26,6 @@ body {
 
 .text-header {
   align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-input { 
-  font-size: 100%; 
+  display: flex;
+  justify-content: center;
 }
