@@ -12,9 +12,9 @@ function App() {
   
   
   const reset=()=>{
-    setAmount('');
-    setPeople('');
-    setTip('')
+    setAmount('0');
+    setPeople('1');
+    setTip('0')
   }
   
   const changeBillHandler = (billData) =>{
