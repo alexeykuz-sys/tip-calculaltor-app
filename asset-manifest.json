@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tip-calculaltor-app/static/css/main.8e221105.chunk.css",
-    "main.js": "/tip-calculaltor-app/static/js/main.0f409cba.chunk.js",
-    "main.js.map": "/tip-calculaltor-app/static/js/main.0f409cba.chunk.js.map",
+    "main.js": "/tip-calculaltor-app/static/js/main.b5ad3058.chunk.js",
+    "main.js.map": "/tip-calculaltor-app/static/js/main.b5ad3058.chunk.js.map",
     "runtime-main.js": "/tip-calculaltor-app/static/js/runtime-main.12c49d5f.js",
     "runtime-main.js.map": "/tip-calculaltor-app/static/js/runtime-main.12c49d5f.js.map",
     "static/js/2.26e5533e.chunk.js": "/tip-calculaltor-app/static/js/2.26e5533e.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.12c49d5f.js",
     "static/js/2.26e5533e.chunk.js",
     "static/css/main.8e221105.chunk.css",
-    "static/js/main.0f409cba.chunk.js"
+    "static/js/main.b5ad3058.chunk.js"
   ]
 }
