@@ -10,10 +10,11 @@ function App() {
   const [tip, setTip] = useState('0');
   const [people, setPeople] = useState('1');
   
+  
   const reset=()=>{
-    setAmount('0');
-    setPeople('1');
-    setTip('0')
+    setAmount('');
+    setPeople('');
+    setTip('')
   }
   
   const changeBillHandler = (billData) =>{
@@ -25,7 +26,7 @@ function App() {
 }
 
 const changeTipHandler = (tipData) =>{
-  setTip(parseFloat(tipData.tip));
+  setTip(tipData.tip);
 }
 
   return (

@@ -4,6 +4,7 @@ import Card from '../UI/Card';
 
 
 const Calculation = ({bill, tip, people, reset}) => {
+    
     return (
         <Card className='calcCard'>
             <div className='calcTip'>

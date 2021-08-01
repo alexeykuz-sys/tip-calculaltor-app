@@ -5,7 +5,8 @@ const InputForm = ({initialValue, onChangeValue, myClassName}) => {
     const[amountBill, setAmountBill]=useState(initialValue);
     useEffect(() => {
         setAmountBill(initialValue);
-    }, [initialValue])
+    }, [initialValue]);
+
     const amountBillHandler = (event) =>{
         event.preventDefault();
         setAmountBill(event.target.value);
